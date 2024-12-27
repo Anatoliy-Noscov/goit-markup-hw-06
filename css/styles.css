@@ -88,6 +88,8 @@ body {
     display: none;
   }
 
+  
+
   .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -172,7 +174,7 @@ body {
         display: block;
       }
 
-      .constacts-list {
+      .contacts-list {
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -419,11 +421,105 @@ body {
         fill: #f4f4fd;
       }
   
-  
-
-
  @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
  }
+
+ /* main */
+
+ .page-hero.section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    height: 432px;
+    background-color: rgba(46, 47, 66, 0.7);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/modile/img_name.jpg);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+
+    max-width: 216px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 72px;
+  }
+
+  .button-hero {
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    margin-top: 72px;
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   background: #4d5ae5;
+   color: #fff;
+   border: none;
+  }
+  
+  .button-hero:hover,
+  .button-hero:focus {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .page-hero.section {
+        max-width: 768px;
+        height: 436px;
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/tablet/img_name.jpg);
+      }
+
+      .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        padding-top: 112px;
+      }
+
+      .button-hero {
+        margin-top: 36px;
+      }
+
+
+}
+@media screen and (min-width: 1158px) {
+    .page-hero.section {
+        max-width: 1440px;
+        height: 600px;
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/desktop/img-name.jpg);
+      }
+
+      .hero-title {
+        padding-top: 188px;
+      }
+
+      .button-hero {
+        margin-top: 48px;
+      }
+}
