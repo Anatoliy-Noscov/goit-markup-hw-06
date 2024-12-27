@@ -1,4 +1,5 @@
 body {
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
@@ -523,3 +524,103 @@ body {
         margin-top: 48px;
       }
 }
+
+/* peculiarities */
+
+.peculiarities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    width: 288px;
+    
+    height: 696px;
+    margin-top: 96px ;
+  }
+  .peculiarities-item {
+    width: 100%;
+  }
+ 
+  .peculiarities-icon { 
+    display: none;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 8px;
+      
+  }
+ 
+  .peculiarities-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    
+  }
+
+  .peculiarities-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+
+  }
+
+  @media screen and (min-width: 768px) {
+   
+      .peculiarities-list {
+        gap: 0;
+        width: 736px;
+        height: 312px;
+      }
+
+      .peculiarities-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        width: calc((100% - 24px) / 2);
+      }
+   
+  }
+
+  @media screen and (min-width: 1158px) {
+    .peculiarities-icon { 
+        display: flex;
+      }
+
+      .peculiarities-list {
+        gap: 24px;
+        width: 1128px;
+        height: 224px;
+      }
+
+      .peculiarities-text {
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      .peculiarities-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        text-align: start;
+        margin-bottom: 8px;
+      }
+
+      .peculiarities-item {
+        width: calc((100% - 72px) / 4);
+      }
+  }
