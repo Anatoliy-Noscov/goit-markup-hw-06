@@ -433,13 +433,23 @@ body {
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ),
-        url(../images/modile/dark-bg@2x.jpg);
+        url(../images/modile/dark-bg.jpg);
     
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         padding: 72px 0;
 
+    }
+
+    @media (min-resolution: 192dpi) {
+        .page-hero.section{
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/modile/dark-bg@2x.jpg);
+        }
     }
 
     .hero-title {
@@ -486,6 +496,16 @@ body {
           url(../images/tablet/dark-bg.jpg);
       }
 
+      @media (min-resolution: 192dpi) {
+        .page-hero.section{
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/tablet/dark-bg@2x.jpg);
+        }
+    }
+
       
 
       .hero-title {
@@ -511,6 +531,16 @@ body {
           ),
           url(../images/desktop/dark_bg.jpg);
       }
+
+      @media (min-resolution: 192dpi) {
+        .page-hero.section{
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/desktop/dark_bg@2x.jpg);
+        }
+    }
 
       .hero-title {
         padding-top: 188px;
